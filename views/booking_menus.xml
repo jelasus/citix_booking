@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem id="booking_menu" sequence="20" web_icon="citix_booking,static/description/icon.png" name="Citix Booking" />
+
+    <menuitem id="booking_submenu" parent="booking_menu" name="Citix Booking Turismo" action="booking_action" sequence="1"/>
+
+</odoo>

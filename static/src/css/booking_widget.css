@@ -1,0 +1,74 @@
+.o_booking_box_inline {
+    display: flex;
+}
+
+.o_booking_background {
+    width: 100%;
+    position: relative;
+}
+
+.o_booking_box {
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 5px 5px 5px 5px;
+}
+
+.o_booking_box_booking {
+    width: 50%;
+    left: 0;
+}
+
+.o_booking_box_review {
+    width: 50%;
+    right: 0;
+}
+
+.o_line_booking {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.o_header_booking_box{
+    padding-bottom: 10px;
+}
+
+.o_label_line_booking {
+    flex: 1,
+}
+
+.o_value_line_booking {
+    flex: 2;
+    text-align: right;
+}
+
+.fa-star {
+    color: yellow;
+}
+
+.o_booking_box_table {
+    padding: 5px 5px 5px 5px;
+}
+
+.o_booking_box_check_in_companions{
+    display: flex;
+}
+
+
+table {
+    width: 100%;
+    margin: 8px 8px 8px 8px;
+}
+
+thead {
+    border-bottom: 1px solid #ccc;
+}
+
+th, td {
+    padding: 4px 4px 4px 4px;
+    text-align: center;
+}
