@@ -13,6 +13,19 @@
     margin: 5px 5px 5px 5px;
 }
 
+.o_booking_box_bottom{
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.o_label_review{
+    align-content: top;
+    width: 30%;
+}
+
 .o_booking_box_booking {
     width: 50%;
     left: 0;
@@ -20,7 +33,7 @@
 
 .o_booking_box_review {
     width: 50%;
-    right: 0;
+    vertical-align: text-top;
 }
 
 .o_line_booking {
@@ -34,11 +47,32 @@
 }
 
 .o_header_booking_box{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
     padding-bottom: 10px;
+    align-content: center;
+    position: relative;
+}
+
+.o_icon_booking_box {
+    display: inline-block;
+    width: 10%;
+    left: 0;
+    text-align: center;
+    align-items: center; 
+    align-content: center;
+}
+
+.o_title_booking_box {
+    display: inline-block;
+    clear: left;
 }
 
 .o_label_line_booking {
-    flex: 1,
+    flex: 1;
+    vertical-align: text-top;
 }
 
 .o_value_line_booking {
@@ -51,6 +85,8 @@
 }
 
 .o_booking_box_table {
+    display: relative;
+    width: 100%;
     padding: 5px 5px 5px 5px;
 }
 
@@ -58,6 +94,9 @@
     display: flex;
 }
 
+p {
+    margin-bottom: 4px;
+}
 
 table {
     width: 100%;

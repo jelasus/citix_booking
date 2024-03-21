@@ -5,6 +5,15 @@
             <div class="o_booking_box_inline">
                 <t t-set="booking" t-value="getBookingField()"/>
                 <div class="o_booking_box o_booking_box_booking">
+                    <div class="o_header_booking_box">
+                        <div class="o_icon_booking_box">
+                            <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="o_title_booking_box">
+                            <p><b>About Booking</b></p>
+                            <p style="font-size:11px;">General Information  about booking</p>
+                        </div>
+                    </div>
                     <div class="o_line_booking">
                         <div class="o_label_line_booking"><b>Guide</b></div>
                         <div class="o_value_line_booking"><t t-esc="booking.guide"/></div>
@@ -56,44 +65,64 @@
                 </div>
                 <t t-set="review" t-value="getReviewField()"/>
                 <div class="o_booking_box o_booking_box_booking">
+                    <div class="o_header_booking_box">
+                        <div class="o_icon_booking_box">
+                            <i class="fa fa-trophy fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="o_title_booking_box">
+                            <p><b>Review</b></p>
+                            <p style="font-size:11px;">User review in the app</p>
+                        </div>
+                    </div>
                     <div class="o_line_booking">
                         <div class="o_label_line_booking"><b>Stars</b></div>
                         <div class="o_value_line_booking"><t t-esc="review.stars"/><i class="fa fa-star" aria-hidden="true"></i></div>
                     </div>
                     <div class="o_line_booking">
-                        <div class="o_label_line_booking"><b>Review</b></div>
+                        <div class="o_label_line_booking o_label_review"><b>Review</b></div>
                         <div class="o_value_line_booking"><t t-esc="review.review"/></div>
                     </div>
                 </div>
             </div>
-            <div class="o_booking_box o_booking_box_check_in_companions">
+            <div class="o_booking_box_bottom o_booking_box_check_in_companions">
                 <t t-set="companions" t-value="getCheckInCompanionsField()"/>
-                <table class="o_booking_box_table">
-                    <thead>
-                        <tr>
-                            <th>Full Name</th>
-                            <th>Document Type</th>
-                            <th>Document Number</th>
-                            <th>Phone Number</th>
-                            <th>Emergency Phone Number</th>
-                            <th>Person Type</th>
-                            <th>Gender</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <t t-foreach="companions" t-as="companion" t-key="companion.id">
+                <div class="o_header_booking_box">
+                    <div class="o_icon_booking_box">
+                        <i class="fa fa-users fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <div class="o_title_booking_box">
+                        <p><b>Check in companions</b></p>
+                        <p style="font-size:11px;">List of client's companions</p>
+                    </div>
+                </div>
+                <div class="o_booking_box_table">
+                    <table >
+                        <thead>
                             <tr>
-                                <td><t t-esc="companion.full_name"/></td>
-                                <td><t t-esc="companion.document_type"/></td>
-                                <td><t t-esc="companion.document_number"/></td>
-                                <td><t t-esc="companion.phone_number"/></td>
-                                <td><t t-esc="companion.emergency_phone_number"/></td>
-                                <td><t t-esc="companion.person_type"/></td>
-                                <td><t t-esc="companion.gender"/></td>
+                                <th>Full Name</th>
+                                <th>Document Type</th>
+                                <th>Document Number</th>
+                                <th>Phone Number</th>
+                                <th>Emergency Phone Number</th>
+                                <th>Person Type</th>
+                                <th>Gender</th>
                             </tr>
-                        </t>
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="companions" t-as="companion" t-key="companion.id">
+                                <tr>
+                                    <td><t t-esc="companion.full_name"/></td>
+                                    <td><t t-esc="companion.document_type"/></td>
+                                    <td><t t-esc="companion.document_number"/></td>
+                                    <td><t t-esc="companion.phone_number"/></td>
+                                    <td><t t-esc="companion.emergency_phone_number"/></td>
+                                    <td><t t-esc="companion.person_type"/></td>
+                                    <td><t t-esc="companion.gender"/></td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </t>
