@@ -30,7 +30,7 @@ class Booking(models.Model):
     )
 
     # service info
-    name = fields.Char('Title name', required=True)
+    name = fields.Char('Title name', default='Service' ,required=True)
     detailed_type = fields.Selection(
         selection=TYPES,
         required=False,
