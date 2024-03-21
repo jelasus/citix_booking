@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data noupdate="1">
+
+        <record id="booking_1" model="booking">
+            <field name="name">Comida y experiencia francesa</field>
+            <field name="choice">pending</field>
+            <field name="detailed_type">restaurant</field>
+            <field name="booking">{
+                "guide": "HC002",
+                "created_at": "2013-10-21",
+                "reservation_date": "2013-10-21",
+                "no_adults": 1,
+                "no_children": 2,
+                "no_babies": 3,
+                "price_without_discounts": 3300.0,
+                "gross_subtotal": 17000.0,
+                "total_addons": 6000.0,
+                "total_discounts": 7000.0,
+                "total_coupons": 2.0,
+                "subtotal": 2000.0,
+                "total": 2200.0
+            }</field>
+            <field name="check_in_companions">[{
+                "id": "C0001",
+                "full_name": "Jorge Luis Pacheco",
+                "document_type": "Cédula de ciudadania",
+                "document_number": "11110009",
+                "phone_number": "987654321",
+                "emergency_phone_number": "999666777",
+                "person_type": "Adult",
+                "gender": "Man"
+            },{
+                "id": "C0002",
+                "full_name": "Jorge Luis Pacheco",
+                "document_type": "Cédula de ciudadania",
+                "document_number": "11110009",
+                "phone_number": "987654321",
+                "emergency_phone_number": "999666777",
+                "person_type": "Adult",
+                "gender": "Man"
+            },{
+                "id": "C0003",
+                "full_name": "Jorge Luis Pacheco",
+                "document_type": "Cédula de ciudadania",
+                "document_number": "11110009",
+                "phone_number": "987654321",
+                "emergency_phone_number": "999666777",
+                "person_type": "Adult",
+                "gender": "Man"
+            }]</field>
+            <field name="review">{
+                "stars": "4",
+                "review": "Todo dispuesto para una feliz experiencia gastronómica. Sin teatro, sin fuegos artificiales, con gran profesionalidad. Cocina llena de matices para repasar la historia de esta casa desde sus inicios hasta la actualidad. Excelente servicio desde la llegada hasta la despedida. ",
+                "created_at": "2013-10-21"
+            }</field>
+            <field name="image_1920" type="base64"
+                file="citix_booking/static/img/booking_1-image.jpg" />
+        </record>
+
+        <record id="booking_2" model="booking">
+            <field name="name">Comida y experiencia mexicana</field>
+            <field name="choice">in_progress</field>
+            <field name="detailed_type">restaurant</field>
+            <field name="booking">{
+                "guide": "HC002",
+                "created_at": "2013-10-21",
+                "reservation_date": "2013-10-21",
+                "no_adults": 1,
+                "no_children": 2,
+                "no_babies": 3,
+                "price_without_discounts": 3300.0,
+                "gross_subtotal": 17000.0,
+                "total_addons": 6000.0,
+                "total_discounts": 7000.0,
+                "total_coupons": 2.0,
+                "subtotal": 2000.0,
+                "total": 2200.0
+            }</field>
+            <field name="check_in_companions">[{
+                "id": "C0001",
+                "full_name": "Jorge Luis Pacheco",
+                "document_type": "Cédula de ciudadania",
+                "document_number": "11110009",
+                "phone_number": "987654321",
+                "emergency_phone_number": "999666777",
+                "person_type": "Adult",
+                "gender": "Man"
+            },{
+                "id": "C0002",
+                "full_name": "Jorge Luis Pacheco",
+                "document_type": "Cédula de ciudadania",
+                "document_number": "11110009",
+                "phone_number": "987654321",
+                "emergency_phone_number": "999666777",
+                "person_type": "Adult",
+                "gender": "Man"
+            },{
+                "id": "C0003",
+                "full_name": "Jorge Luis Pacheco",
+                "document_type": "Cédula de ciudadania",
+                "document_number": "11110009",
+                "phone_number": "987654321",
+                "emergency_phone_number": "999666777",
+                "person_type": "Adult",
+                "gender": "Man"
+            }]</field>
+            <field name="review">{
+                "stars": "4",
+                "review": "Todo dispuesto para una feliz experiencia gastronómica. Sin teatro, sin fuegos artificiales, con gran profesionalidad. Cocina llena de matices para repasar la historia de esta casa desde sus inicios hasta la actualidad. Excelente servicio desde la llegada hasta la despedida. ",
+                "created_at": "2013-10-21"
+            }</field>
+            <field name="image_1920" type="base64"
+                file="citix_booking/static/img/booking_2-image.jpg" />
+        </record>
+
+        <record id="booking_3" model="booking">
+            <field name="name">Comida y experiencia campestre</field>
+            <field name="choice">pending</field>
+            <field name="detailed_type">restaurant</field>
+            <field name="booking">{
+                "guide": "HC002",
+                "created_at": "2013-10-21",
+                "reservation_date": "2013-10-21",
+                "no_adults": 1,
+                "no_children": 2,
+                "no_babies": 3,
+                "price_without_discounts": 3300.0,
+                "gross_subtotal": 17000.0,
+                "total_addons": 6000.0,
+                "total_discounts": 7000.0,
+                "total_coupons": 2.0,
+                "subtotal": 2000.0,
+                "total": 2200.0
+            }</field>
+            <field name="check_in_companions">[{
+                "id": "C0001",
+                "full_name": "Jorge Luis Pacheco",
+                "document_type": "Cédula de ciudadania",
+                "document_number": "11110009",
+                "phone_number": "987654321",
+                "emergency_phone_number": "999666777",
+                "person_type": "Adult",
+                "gender": "Man"
+            },{
+                "id": "C0002",
+                "full_name": "Jorge Luis Pacheco",
+                "document_type": "Cédula de ciudadania",
+                "document_number": "11110009",
+                "phone_number": "987654321",
+                "emergency_phone_number": "999666777",
+                "person_type": "Adult",
+                "gender": "Man"
+            },{
+                "id": "C0003",
+                "full_name": "Jorge Luis Pacheco",
+                "document_type": "Cédula de ciudadania",
+                "document_number": "11110009",
+                "phone_number": "987654321",
+                "emergency_phone_number": "999666777",
+                "person_type": "Adult",
+                "gender": "Man"
+            }]</field>
+            <field name="review">{
+                "stars": "4",
+                "review": "Todo dispuesto para una feliz experiencia gastronómica. Sin teatro, sin fuegos artificiales, con gran profesionalidad. Cocina llena de matices para repasar la historia de esta casa desde sus inicios hasta la actualidad. Excelente servicio desde la llegada hasta la despedida. ",
+                "created_at": "2013-10-21"
+            }</field>
+            <field name="image_1920" type="base64"
+                file="citix_booking/static/img/booking_3-image.jpg" />
+        </record>
+
+        <record id="booking_4" model="booking">
+            <field name="name">Tour mexicano de comida</field>
+            <field name="choice">in_progress</field>
+            <field name="detailed_type">restaurant</field>
+            <field name="booking">{
+                "guide": "HC002",
+                "created_at": "2013-10-21",
+                "reservation_date": "2013-10-21",
+                "no_adults": 1,
+                "no_children": 2,
+                "no_babies": 3,
+                "price_without_discounts": 3300.0,
+                "gross_subtotal": 17000.0,
+                "total_addons": 6000.0,
+                "total_discounts": 7000.0,
+                "total_coupons": 2.0,
+                "subtotal": 2000.0,
+                "total": 2200.0
+            }</field>
+            <field name="check_in_companions">[{
+                "id": "C0001",
+                "full_name": "Jorge Luis Pacheco",
+                "document_type": "Cédula de ciudadania",
+                "document_number": "11110009",
+                "phone_number": "987654321",
+                "emergency_phone_number": "999666777",
+                "person_type": "Adult",
+                "gender": "Man"
+            },{
+                "id": "C0002",
+                "full_name": "Jorge Luis Pacheco",
+                "document_type": "Cédula de ciudadania",
+                "document_number": "11110009",
+                "phone_number": "987654321",
+                "emergency_phone_number": "999666777",
+                "person_type": "Adult",
+                "gender": "Man"
+            },{
+                "id": "C0003",
+                "full_name": "Jorge Luis Pacheco",
+                "document_type": "Cédula de ciudadania",
+                "document_number": "11110009",
+                "phone_number": "987654321",
+                "emergency_phone_number": "999666777",
+                "person_type": "Adult",
+                "gender": "Man"
+            }]</field>
+            <field name="review">{
+                "stars": "4",
+                "review": "Todo dispuesto para una feliz experiencia gastronómica. Sin teatro, sin fuegos artificiales, con gran profesionalidad. Cocina llena de matices para repasar la historia de esta casa desde sus inicios hasta la actualidad. Excelente servicio desde la llegada hasta la despedida. ",
+                "created_at": "2013-10-21"
+            }</field>
+            <field name="image_1920" type="base64"
+                file="citix_booking/static/img/booking_4-image.jpg" />
+        </record>
+
+        <record id="booking_5" model="booking">
+            <field name="name">Ruta de las carnes</field>
+            <field name="choice">finished</field>
+            <field name="detailed_type">restaurant</field>
+            <field name="booking">{
+                "guide": "HC002",
+                "created_at": "2013-10-21",
+                "reservation_date": "2013-10-21",
+                "no_adults": 1,
+                "no_children": 2,
+                "no_babies": 3,
+                "price_without_discounts": 3300.0,
+                "gross_subtotal": 17000.0,
+                "total_addons": 6000.0,
+                "total_discounts": 7000.0,
+                "total_coupons": 2.0,
+                "subtotal": 2000.0,
+                "total": 2200.0
+            }</field>
+            <field name="check_in_companions">[{
+                "id": "C0001",
+                "full_name": "Jorge Luis Pacheco",
+                "document_type": "Cédula de ciudadania",
+                "document_number": "11110009",
+                "phone_number": "987654321",
+                "emergency_phone_number": "999666777",
+                "person_type": "Adult",
+                "gender": "Man"
+            },{
+                "id": "C0002",
+                "full_name": "Jorge Luis Pacheco",
+                "document_type": "Cédula de ciudadania",
+                "document_number": "11110009",
+                "phone_number": "987654321",
+                "emergency_phone_number": "999666777",
+                "person_type": "Adult",
+                "gender": "Man"
+            },{
+                "id": "C0003",
+                "full_name": "Jorge Luis Pacheco",
+                "document_type": "Cédula de ciudadania",
+                "document_number": "11110009",
+                "phone_number": "987654321",
+                "emergency_phone_number": "999666777",
+                "person_type": "Adult",
+                "gender": "Man"
+            }]</field>
+            <field name="review">{
+                "stars": "4",
+                "review": "Todo dispuesto para una feliz experiencia gastronómica. Sin teatro, sin fuegos artificiales, con gran profesionalidad. Cocina llena de matices para repasar la historia de esta casa desde sus inicios hasta la actualidad. Excelente servicio desde la llegada hasta la despedida. ",
+                "created_at": "2013-10-21"
+            }</field>
+            <field name="image_1920" type="base64"
+                file="citix_booking/static/img/booking_5-image.jpg" />
+        </record>
+
+    </data>
+
+</odoo>

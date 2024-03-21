@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates xml:space="preserve">
+    <t t-name="citix_booking.Booking">
+        <div class="o_booking_background">
+            <div class="o_booking_box_inline">
+                <t t-set="booking" t-value="getBookingField()"/>
+                <div class="o_booking_box o_booking_box_booking">
+                    <div class="o_line_booking">
+                        <div class="o_label_line_booking"><b>Guide</b></div>
+                        <div class="o_value_line_booking"><t t-esc="booking.guide"/></div>
+                    </div>
+                    <div class="o_line_booking">
+                        <div class="o_label_line_booking"><b>Reservation Date</b></div>
+                        <div class="o_value_line_booking"><t t-esc="booking.reservation_date"/></div>
+                    </div>
+                    <div class="o_line_booking">
+                        <div class="o_label_line_booking"><b>Nº Adults</b></div>
+                        <div class="o_value_line_booking"><t t-esc="booking.no_adults"/></div>
+                    </div>
+                    <div class="o_line_booking">
+                        <div class="o_label_line_booking"><b>Nº Children</b></div>
+                        <div class="o_value_line_booking"><t t-esc="booking.no_children"/></div>
+                    </div>
+                    <div class="o_line_booking">
+                        <div class="o_label_line_booking"><b>Nº Babies</b></div>
+                        <div class="o_value_line_booking"><t t-esc="booking.no_babies"/></div>
+                    </div>
+                    <div class="o_line_booking">
+                        <div class="o_label_line_booking"><b>Price Without Discounts</b></div>
+                        <div class="o_value_line_booking"><t t-esc="booking.price_without_discounts"/></div>
+                    </div>
+                    <div class="o_line_booking">
+                        <div class="o_label_line_booking"><b>Gross Subtotal</b></div>
+                        <div class="o_value_line_booking"><t t-esc="booking.gross_subtotal"/></div>
+                    </div>
+                    <div class="o_line_booking">
+                        <div class="o_label_line_booking"><b>Total Addons</b></div>
+                        <div class="o_value_line_booking"><t t-esc="booking.total_addons"/></div>
+                    </div>
+                    <div class="o_line_booking">
+                        <div class="o_label_line_booking"><b>Total Discounts</b></div>
+                        <div class="o_value_line_booking"><t t-esc="booking.total_discounts"/></div>
+                    </div>
+                    <div class="o_line_booking">
+                        <div class="o_label_line_booking"><b>Total Coupons</b></div>
+                        <div class="o_value_line_booking"><t t-esc="booking.total_coupons"/></div>
+                    </div>
+                    <div class="o_line_booking">
+                        <div class="o_label_line_booking"><b>Subtotal</b></div>
+                        <div class="o_value_line_booking"><t t-esc="booking.subtotal"/></div>
+                    </div>
+                    <div class="o_line_booking">
+                        <div class="o_label_line_booking"><b>Total</b></div>
+                        <div class="o_value_line_booking"><t t-esc="booking.total"/></div>
+                    </div>
+                </div>
+                <t t-set="review" t-value="getReviewField()"/>
+                <div class="o_booking_box o_booking_box_booking">
+                    <div class="o_line_booking">
+                        <div class="o_label_line_booking"><b>Stars</b></div>
+                        <div class="o_value_line_booking"><t t-esc="review.stars"/><i class="fa fa-star" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="o_line_booking">
+                        <div class="o_label_line_booking"><b>Review</b></div>
+                        <div class="o_value_line_booking"><t t-esc="review.review"/></div>
+                    </div>
+                </div>
+            </div>
+            <div class="o_booking_box o_booking_box_check_in_companions">
+                <t t-set="companions" t-value="getCheckInCompanionsField()"/>
+                <table class="o_booking_box_table">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Document Type</th>
+                            <th>Document Number</th>
+                            <th>Phone Number</th>
+                            <th>Emergency Phone Number</th>
+                            <th>Person Type</th>
+                            <th>Gender</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="companions" t-as="companion" t-key="companion.id">
+                            <tr>
+                                <td><t t-esc="companion.full_name"/></td>
+                                <td><t t-esc="companion.document_type"/></td>
+                                <td><t t-esc="companion.document_number"/></td>
+                                <td><t t-esc="companion.phone_number"/></td>
+                                <td><t t-esc="companion.emergency_phone_number"/></td>
+                                <td><t t-esc="companion.person_type"/></td>
+                                <td><t t-esc="companion.gender"/></td>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </t>
+
+</templates>
