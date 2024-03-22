@@ -24,7 +24,7 @@
             }</field>
             <field name="check_in_companions">[{
                 "id": "C0001",
-                "full_name": "Jorge Luis Pacheco",
+                "full_name": "Rose Luisa Salas",
                 "document_type": "Cédula de ciudadania",
                 "document_number": "11110009",
                 "phone_number": "987654321",
@@ -33,18 +33,18 @@
                 "gender": "Man"
             },{
                 "id": "C0002",
-                "full_name": "Jorge Luis Pacheco",
+                "full_name": "Rose Luisa Salas",
                 "document_type": "Cédula de ciudadania",
-                "document_number": "11110009",
+                "document_number": "11113123",
                 "phone_number": "987654321",
                 "emergency_phone_number": "999666777",
                 "person_type": "Adult",
                 "gender": "Man"
             },{
                 "id": "C0003",
-                "full_name": "Jorge Luis Pacheco",
+                "full_name": "Rose Luisa Salas",
                 "document_type": "Cédula de ciudadania",
-                "document_number": "11110009",
+                "document_number": "11111239",
                 "phone_number": "987654321",
                 "emergency_phone_number": "999666777",
                 "person_type": "Adult",
@@ -64,8 +64,8 @@
             <field name="choice">in_progress</field>
             <field name="detailed_type">restaurant</field>
             <field name="booking">{
-                "guide": "HC002",
-                "created_at": "2013-10-21",
+                "guide": "HC007",
+                "created_at": "2012-10-21",
                 "reservation_date": "2013-10-21",
                 "no_adults": 1,
                 "no_children": 2,
