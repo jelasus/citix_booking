@@ -11,10 +11,7 @@ export class BookingWidget extends Component {
   }
 
   async onWillStart() {
-    var id = this.props.record.evalContext.id;
-    if (!id) {
-      id = 1; // action show example data
-    }
+    const id = this.props.record.evalContext.id;
     this.resBooking = await this.orm.searchRead(
       this.props.record.resModel,
       [["id", "=", id]],
